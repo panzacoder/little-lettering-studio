@@ -1,7 +1,7 @@
-const resolveConfig = require("tailwindcss/resolveConfig");
-const tailwindConfig = require("./tailwind.config.js");
+const resolveConfig = require('tailwindcss/resolveConfig')
+const tailwindConfig = require('./tailwind.config.js')
 
-const fullConfig = resolveConfig(tailwindConfig);
+const fullConfig = resolveConfig(tailwindConfig)
 
 module.exports = {
   siteMetadata: {
@@ -19,7 +19,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal["400"],
+        theme_color: fullConfig.theme.colors.teal['400'],
         display: `minimal-ui`,
         icon: `src/images/tailwind-icon.png`,
       },
@@ -36,6 +36,15 @@ module.exports = {
         ],
       },
     },
+    // {
+    // resolve: 'gatsby-plugin-web-font-loader',
+    // options: {
+    // custom: {
+    // families: ['Alchemary'],
+    // urls: ['/fonts/fonts.css'],
+    // },
+    // },
+    // },
     `gatsby-plugin-offline`,
   ],
-};
+}

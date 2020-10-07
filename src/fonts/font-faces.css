@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Alchemary';
+  src: url('Alchemary.otf');
+}
+
+@font-face {
+  font-family: 'Alchemary';
+  font-weight: bold;
+  src: url('Alchemary.otf');
+}
+
+/* @font-face { */
+/* font-family: 'Bodoni'; */
+/* src: url('./Bodoni.ttc') format('truetype'); */
+/* } */
+
+/* @font-face { */
+/* font-family: 'Bodoni'; */
+/* font-weight: bold; */
+/* src: url('./Bodoni.ttc') format('truetype'); */
+/* } */

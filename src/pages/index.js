@@ -1,43 +1,20 @@
-import React from "react";
+import React from 'react'
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+import SEO from '../components/seo'
 
 function IndexPage() {
   return (
-    <Layout>
+    <div className="bg-sand ">
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`lettering`, `design`, `procreate`, `pensacola`]}
         title="Home"
       />
 
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block w-1/2 mx-auto mb-8"
-          src={catAndHumanIllustration}
-        />
-
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
-        </p>
+      <section className="flex flex-column text-center prose bg-ballerina">
+        <h1 className="">Little Lettering Studio</h1>
       </section>
-    </Layout>
-  );
+    </div>
+  )
 }
 
-export default IndexPage;
+export default IndexPage
