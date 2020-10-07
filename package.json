@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
+  "name": "hello-felix",
+  "description": "A software plaform by Breakthrough",
   "version": "4.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "author": "Headway <hello@headway.io>",
   "dependencies": {
     "gatsby": "2.24.66",
     "gatsby-plugin-manifest": "2.4.33",
@@ -26,23 +26,29 @@
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different \"**/*.{css,js,jsx,json,md}\"",
     "analyze": "npm run analyze:lint && npm run analyze:prettier",
-
     "fix:lint": "eslint --ext .jsx --ext .js . --fix",
     "fix:prettier": "prettier --write \"**/*.{css,js,jsx,json,md}\"",
     "fix": "npm run fix:lint && npm run fix:prettier",
-
     "build": "gatsby build",
     "develop": "gatsby develop",
     "dev": "npm run develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@storybook/addon-actions": "^6.0.26",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/react": "^6.0.26",
     "@tailwindcss/custom-forms": "0.2.1",
     "autoprefixer": "9.8.6",
     "babel-eslint": "10.1.0",
+    "babel-loader": "^8.1.0",
     "cssnano": "4.1.10",
     "eslint": "7.10.0",
     "eslint-loader": "4.0.2",
@@ -50,6 +56,7 @@
     "eslint-plugin-react": "7.21.2",
     "gatsby-plugin-eslint": "2.0.8",
     "prettier": "2.1.2",
+    "react-is": "^16.13.1",
     "tailwindcss": "1.8.10"
   },
   "repository": {
