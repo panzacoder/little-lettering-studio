@@ -10,7 +10,7 @@ module.exports = {
         ballerina: '#d09070',
       },
       fontFamily: {
-        script: ['Alchemary'],
+        script: ['Alchemary', 'script'],
         sans: ['Lato', 'sans-serif'],
         // serif: ['Bodoni', 'serif'],
       },
@@ -19,7 +19,7 @@ module.exports = {
       default: {
         css: {
           h1: {
-            fontFamily: ['Alchemary', 'script'],
+            fontFamily: ['Alchemary'],
             fontSize: '4rem',
           },
           // p: {
