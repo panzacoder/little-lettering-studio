@@ -6,9 +6,9 @@ const fullConfig = resolveConfig(tailwindConfig)
 
 module.exports = {
   siteMetadata: {
-    title: `Hello Felix`,
-    description: `A software platform by Breakthrough`,
-    author: `Breathrough Fuel`,
+    title: `Little Lettering Studio`,
+    description: `A small, boutique lettering studio by Marissa Hebert`,
+    author: `Jacob Hebert`,
   },
   plugins: [
     // `gatsby-plugin-eslint`,

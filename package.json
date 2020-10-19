@@ -1,8 +1,8 @@
 {
-  "name": "hello-felix",
-  "description": "A software plaform by Breakthrough",
+  "name": "little-lettering-studio",
+  "description": "A small, boutique lettering studio by Marissa Hebert",
   "version": "4.0.0",
-  "author": "Headway <hello@headway.io>",
+  "author": "Jacob Hebert <jacobshebert@gmail.com>",
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
     "gatsby": "^2.24.80",

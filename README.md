@@ -1,6 +1,6 @@
 # Hello Felix! 👋
 
-## a JAMStack project by Headway
+## a JAMStack project by Panzacoder
 
 ### GatsbyJS - Static Site Generator built on React and GraphQL
 ### ContentfulCMS - A powerful headless CMS
