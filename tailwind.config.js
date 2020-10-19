@@ -15,29 +15,8 @@ module.exports = {
         // serif: ['Bodoni', 'serif'],
       },
     },
-    typography: (theme) => ({
-      default: {
-        css: {
-          h1: {
-            fontFamily: ['Alchemary'],
-            fontSize: '4rem',
-          },
-          // p: {
-          // fontFamily: ['Bodoni', 'serif'],
-          // fontSize: '1rem',
-          // },
-          // span: {
-          // fontFamily: ['Bodoni', 'serif'],
-          // fontSize: '1rem',
-          // },
-        },
-      },
-    }),
   },
   variants: {},
   // https://github.com/tailwindcss/custom-forms
-  plugins: [
-    require('@tailwindcss/custom-forms'),
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/custom-forms')],
 }

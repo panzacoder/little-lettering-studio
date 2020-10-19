@@ -1,5 +1,6 @@
 const resolveConfig = require('tailwindcss/resolveConfig')
 const tailwindConfig = require('./tailwind.config.js')
+const path = require(`path`)
 
 const fullConfig = resolveConfig(tailwindConfig)
 
@@ -10,8 +11,9 @@ module.exports = {
     author: `Breathrough Fuel`,
   },
   plugins: [
-    `gatsby-plugin-eslint`,
+    // `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -23,6 +25,24 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/tailwind-icon.png`,
       },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /src\/svg/,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-transformer-sharp`,
     },
     {
       resolve: `gatsby-plugin-postcss`,
